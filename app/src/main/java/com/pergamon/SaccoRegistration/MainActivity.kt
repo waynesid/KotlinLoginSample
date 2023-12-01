@@ -1,4 +1,4 @@
-package com.kotlindroider.devaj
+package com.pergamon.SaccoRegistration
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
@@ -8,7 +8,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(com.kotlindroider.devaj.R.layout.activity_main)
+        setContentView(com.pergamon.SaccoRegistration.R.layout.activity_main)
 
     }
 

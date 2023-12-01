@@ -1,4 +1,4 @@
-package com.kotlindroider.devaj
+package com.pergamon.SaccoRegistration
 
 import android.app.Activity
 import android.app.ProgressDialog
@@ -20,7 +20,7 @@ class LoginActivity : AppCompatActivity() {
 
     public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(com.kotlindroider.devaj.R.layout.activity_login)
+        setContentView(com.com.pergamon.SaccoRegistration.R.layout.activity_login)
 
         _loginButton = findViewById(R.id.btn_login) as Button
         _signupLink = findViewById(R.id.link_signup) as TextView
@@ -33,7 +33,7 @@ class LoginActivity : AppCompatActivity() {
             val intent = Intent(applicationContext, SignupActivity::class.java)
             startActivityForResult(intent, REQUEST_SIGNUP)
             finish()
-            //                overridePendingTransition(com.kotlindroider.devaj.R.anim.push_left_in, com.kotlindroider.devaj.R.anim.push_left_out);
+            //                overridePendingTransition(com.com.pergamon.SaccoRegistration.R.anim.push_left_in, com.com.pergamon.SaccoRegistration.R.anim.push_left_out);
         }
     }
 
@@ -48,7 +48,7 @@ class LoginActivity : AppCompatActivity() {
         _loginButton!!.isEnabled = false
 
         val progressDialog = ProgressDialog(this@LoginActivity,
-                com.kotlindroider.devaj.R.style.AppTheme_Dark_Dialog)
+                com.com.pergamon.SaccoRegistration.R.style.AppTheme_Dark_Dialog)
         progressDialog.isIndeterminate = true
         progressDialog.setMessage("Login...")
         progressDialog.show()
